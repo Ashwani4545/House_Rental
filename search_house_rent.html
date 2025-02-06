@@ -1,0 +1,145 @@
+<html>
+<head>
+    <title>House Search - House Rental</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(20, 20, 22, 0.7),rgba(0, 0, 0, 0.7)), url('7.jpg'); /* Specify the path to your background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .search-form {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-form h2
+        {
+            color: #444;
+        }
+
+        .search-select {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 10px;
+        }
+
+        .search-button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            color: aliceblue;
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 3px;
+            border: 1px solid rgba(255,255,255,0.3);
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .btn:hover{
+    border: 1px solid#f6f6f6;
+    background: #ffffff;
+    transition: 0.5s;
+    color: #444;
+    font-weight: 600;
+}
+    </style>
+       
+</head>
+<body>
+    <header>
+        <h1>House Search - House Rental</h1>
+    </header>
+    <nav>
+        <a href="Home_page_with_image.html" class="btn">Home</a>
+        <a href="properties_house_rent.html" class="btn">Properties</a>
+        <a href="search_house_rent.html" class="btn">Search</a>
+        <a href="About_us_house_rent.html" class="btn">About Us</a>
+        <a href="Contact_us.html" class="btn">Contact</a>
+    </nav>
+    <section class="Search-form">
+        <form id="Search-form">
+            <div class="form-group"></div>
+                <label for="Menu">Select type of house</label>
+                    <form id="Search-form" action="properties_house_rent.html" method="post">
+                        <select class="search-select" id="roomType">
+                            <option value=""required></option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Condo">Condo</option>
+                            <option value="Cottage">Cottage</option>
+                            <option value="Villa">Villa</option>
+                            <option value="Mahal">Mahal</option>
+                            <option value="Mansion">Mansion</option>
+                        </select>
+                    </form>
+            </div>
+        </form>
+    </section>
+
+    <section class="Search-form">
+        <form id="Search-form" action="properties_house_rent.html" method="post">
+            <div class="form-group"></div>
+                <label for="Menu">Select number of bedrooms required</label>
+                    <form id="Search-form" action="properties_house_rent.html" method="post">
+                        <select class="search-select" id="roomQuantity">
+                            <option value=""required></option>
+                            <option value="1-bedroom">1-bedroom</option>
+                            <option value="2-bedroom">2-bedroom</option>
+                            <option value="3-bedroom">3-bedroom</option>
+                            <option value="4-bedroom">4-bedroom</option>
+                            <option value="7-bedroom">7-bedroom</option>
+                            <option value="15-bedroom">15-bedroom</option>
+                        </select>
+                        <button class="search-button" type="submit" onclick="abc()">Search</button>
+                    </form>
+            </div> 
+        </form>
+        <a href="properties_house_rent.html" class="btn">Back</a>
+        <a href="About_us_house_rent.html" class="btn">Next</a>
+    </section>
+
+</body>
+</html>
